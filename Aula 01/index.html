@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ítalo</title>
+
+    <style contenteditable>
+      body {
+        background: #04f4f4;
+        color: rgb(0, 0, 0);
+        text-shadow: 0px 0px 0px #000;
+      }
+
+      h1 {
+        background: #bea1a1;
+        text-align: center;
+      }
+
+      p {
+        color: rgb(8, 212, 248);
+
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body contenteditable>
+    <h1>Aula 01 - HTML | CSS | JS</h1>
+
+    <h2>Alerta de mensagem!</h2>
+    <p style="text-align: center">
+      <button onclick="alerta()" style="">🚨Alerta🚨</button>
+    </p>
+    <!-- document.getElementsByTagName("body")[0].style.background = "#ffffff" -->
+
+    <h2>Altere a cor do fundo do site clicando em uma das cores</h2>
+    <p style="text-align: center">
+      <button onclick="vermelho()" style="background: red">vermelho</button>
+    </p>
+
+    <p style="text-align: center">
+      <button onclick="azul()" style="background: blue">azul</button>
+    </p>
+
+    <p style="text-align: center">
+      <button onclick="verde()" style="background: green">verde</button>
+    </p>
+  </body>
+  <script>
+    console.log("Olá mundo");
+
+    function alerta() {
+      var nome = prompt("Olá, informe seu nome:");
+      alert(`Olá ${nome}!`);
+    }
+
+    function vermelho() {
+      document.getElementsByTagName("body")[0].style.background = "red";
+    }
+
+    function azul() {
+      document.getElementsByTagName("body")[0].style.background = "blue";
+    }
+
+    function verde() {
+      document.getElementsByTagName("body")[0].style.background = "green";
+    }
+  </script>
+</html>
